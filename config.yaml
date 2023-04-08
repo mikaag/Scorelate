@@ -1,0 +1,57 @@
+---
+server:
+  server: localhost
+  user: sa
+  pwd: Sprpwd1234
+  database: Loans_2023_01_27
+
+predict:
+  Percent: True
+  Num: Delq
+  Denom: OpeningBalance
+
+Keys:
+  Key1: VIN
+  Key2: Vin6
+
+Databases:
+  db1: dbo.UnderwritingData
+  db2: dbo.RawAlgorithmData
+
+include:
+  - "OpeningBalance"
+  - "Salary"
+  - "Term"
+  - "VehicleYear"
+  - "LTV"
+  - "DTI"
+  - "TradelinesTotal"
+  - "TradelinesBalance"
+  - "Reposessions"
+  - "Bankrupcies"
+  - "Chageoff"
+  - "Mortgage"
+  - "NinetyDaysDelinquent"
+  - "InquiresTotal"
+  - "OpenTotal"
+  - "ClosedTotalTermsNotPaid"
+  - "LatePaymentHistory001230"
+  - "LatePaymentHistory001260"
+  - "LatePaymentHistory001290Plus"
+  - "PaidAccounts"
+  - "InquiriesLast6Months"
+  - "OpenTotalInBadStatus"
+  - "RentMortgage"
+  - "CashDown"
+  - "HomeOwner"
+  - "APR"
+  - "Status"
+
+outliers:
+  - "Status"
+  - "DelqPct"
+  - "CreaditScore"
+  - "HomeOwner"
+  - "Reposessions"
+  - "Chageoff"
+  - "APR"
