@@ -24,7 +24,7 @@ predictions:
   replace:
     CL: 1
     CO: 0
-  doSpecial: True
+  doSpecial: False
   special: 'DelqPct'
 
 ignore:
@@ -44,6 +44,7 @@ ignore:
   - 'ApplicationNumber'
   - 'CurrentPaymentsMade'
   - 'Name'
+  - 'Delq'
 
 outliers:
   ignore:
