@@ -1,0 +1,108 @@
+---
+server:
+  name: localhost
+  user: sa
+  password: Passw0rd!
+  database: Loans_2023_01_27
+
+
+tables:
+  -
+    name: 'dbo.UnderwritingData'
+    primary: 'VIN'
+    secondary: 'CreaditScore'
+    null_secondary: 0
+  -
+    name: 'dbo.RawAlgorithmData'
+    primary: 'Vin6'
+    secondary: 'Score'
+    null_secondary: 0
+
+
+predictions:
+  target: 'ProcStatsCd'
+  replace:
+    CL: 1
+    CO: 0
+  doSpecial: True
+  special: 'DelqPct'
+
+ignore:
+  - 'Class_'
+  - 'AccountShort'
+  - 'CustomerNumber'
+  - 'CurBalAmt'
+  - 'Customer'
+  - 'AdminStatus'
+  - 'NumberPmnt'
+  - 'NumberPmnt'
+  - 'ResultCD'
+  - 'ChargeOffDt'
+  - 'PercentageOfPaymentsMade'
+  - 'DelqCalcAlert'
+  - 'RecyCalcAlert'
+  - 'ApplicationNumber'
+  - 'CurrentPaymentsMade'
+  - 'Name'
+
+outliers:
+  ignore:
+    - "Status"
+    - "DelqPct"
+    - "CreaditScore"
+    - "HomeOwner"
+    - "Reposessions"
+    - "Chageoff"
+    - "APR"
+
+
+#predict:
+#  Percent: True
+#  Num: Delq
+#  Denom: OpeningBalance
+#
+#Keys:
+#  Key1: VIN
+#  Key2: Vin6
+#
+#Databases:
+#  db1: dbo.UnderwritingData
+#  db2: dbo.RawAlgorithmData
+#
+#include:
+#  - "OpeningBalance"
+#  - "Salary"
+#  - "Term"
+#  - "VehicleYear"
+#  - "LTV"
+#  - "DTI"
+#  - "TradelinesTotal"
+#  - "TradelinesBalance"
+#  - "Reposessions"
+#  - "Bankrupcies"
+#  - "Chageoff"
+#  - "Mortgage"
+#  - "NinetyDaysDelinquent"
+#  - "InquiresTotal"
+#  - "OpenTotal"
+#  - "ClosedTotalTermsNotPaid"
+#  - "LatePaymentHistory001230"
+#  - "LatePaymentHistory001260"
+#  - "LatePaymentHistory001290Plus"
+#  - "PaidAccounts"
+#  - "InquiriesLast6Months"
+#  - "OpenTotalInBadStatus"
+#  - "RentMortgage"
+#  - "CashDown"
+#  - "HomeOwner"
+#  - "APR"
+#  - "Status"
+#
+#outliers:
+#  - "Status"
+#  - "DelqPct"
+#  - "CreaditScore"
+#  - "HomeOwner"
+#  - "Reposessions"
+#  - "Chageoff"
+#  - "APR"
