@@ -5,6 +5,7 @@ server:
   password: Passw0rd!
   database: Loans_2023_01_27
 
+model_dir: '../Models/'
 
 tables:
   -
@@ -55,54 +56,3 @@ outliers:
     - "Reposessions"
     - "Chageoff"
     - "APR"
-
-
-#predict:
-#  Percent: True
-#  Num: Delq
-#  Denom: OpeningBalance
-#
-#  Key1: VIN
-#  Key2: Vin6
-#
-#Databases:
-#  db1: dbo.UnderwritingData
-#  db2: dbo.RawAlgorithmData
-#
-#include:
-#  - "OpeningBalance"
-#  - "Salary"
-#  - "Term"
-#  - "VehicleYear"
-#  - "LTV"
-#  - "DTI"
-#  - "TradelinesTotal"
-#  - "TradelinesBalance"
-#  - "Reposessions"
-#  - "Bankrupcies"
-#  - "Chageoff"
-#  - "Mortgage"
-#  - "NinetyDaysDelinquent"
-#  - "InquiresTotal"
-#  - "OpenTotal"
-#  - "ClosedTotalTermsNotPaid"
-#  - "LatePaymentHistory001230"
-#  - "LatePaymentHistory001260"
-#  - "LatePaymentHistory001290Plus"
-#  - "PaidAccounts"
-#  - "InquiriesLast6Months"
-#  - "OpenTotalInBadStatus"
-#  - "RentMortgage"
-#  - "CashDown"
-#  - "HomeOwner"
-#  - "APR"
-#  - "Status"
-#
-#outliers:
-#  - "Status"
-#  - "DelqPct"
-#  - "CreaditScore"
-#  - "HomeOwner"
-#  - "Reposessions"
-#  - "Chageoff"
-#  - "APR"
