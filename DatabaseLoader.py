@@ -274,18 +274,13 @@ class DatabaseLoader:
             return self.df[self.df[category] == highest]
 
     def standardize_categorical_column(self, col, inplace=False):
+        df = self.df[col].apply(
+                lambda x: x.replace("0", "").replace("1", "").replace("2", "").replace("3", "").replace("4","")
+                .replace("5","").replace("6", "").replace("7", "").replace("8", "").replace("8", "").replace(" ", ""))
         if inplace:
-            self.df[col] = self.df[col].apply(
-                lambda x: x.replace("0", "").replace("1", "").replace("2", "").replace("3", "").replace("4",
-                                                                                                        "").replace("5",
-                                                                                                                    "").replace(
-                    "6", "").replace("7", "").replace("8", "").replace("8", "").replace(" ", ""))
+            self.df[col] = df
         else:
-            return self.df[col].apply(
-                lambda x: x.replace("0", "").replace("1", "").replace("2", "").replace("3", "").replace("4",
-                                                                                                        "").replace("5",
-                                                                                                                    "").replace(
-                    "6", "").replace("7", "").replace("8", "").replace("8", "").replace(" ", ""))
+            return df
 
     def print_cols(self):
         for col in self.df.columns:
