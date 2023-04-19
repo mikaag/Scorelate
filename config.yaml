@@ -26,6 +26,7 @@ predictions:
     CL: 1
     CO: 0
   doSpecial: False
+#  special: 'ProfitLoss'
   special: 'DelqPct'
 
 ignore:
@@ -35,8 +36,6 @@ ignore:
   - 'CurBalAmt'
   - 'Customer'
   - 'AdminStatus'
-  - 'NumberPmnt'
-  - 'NumberPmnt'
   - 'ResultCD'
   - 'ChargeOffDt'
   - 'PercentageOfPaymentsMade'
@@ -46,6 +45,7 @@ ignore:
   - 'CurrentPaymentsMade'
   - 'Name'
   - 'Delq'
+  - 'NumberPmnt'
 
 outliers:
   ignore:
