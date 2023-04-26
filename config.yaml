@@ -3,7 +3,7 @@ server:
   name: localhost
   user: sa
   password: Passw0rd!
-  database: Loans_2023_01_27
+  database: Loans_Quality_2021_06_17
 
 model_dir: '../Models/'
 
@@ -27,7 +27,7 @@ predictions:
     CO: 0
   doSpecial: False
 #  special: 'ProfitLoss'
-  special: 'DelqPct'
+#  special: 'DelqPct'
 
 ignore:
   - 'Class_'
