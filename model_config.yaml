@@ -38,3 +38,43 @@ entities:
 - LatePaymentHistory25Plus30
 - LatePaymentHistory25Plus60
 - LatePaymentHistory25Plus90
+means:
+  APR: 0.22764922279792746
+  Account150DaysPastDue: 0.6338825561312613
+  Account180DaysPastDue: 0.0
+  Apr: 22.963793897524468
+  Bankrupcies: 0.0
+  Chageoff: 1.7227979274611398
+  ClosedTotalTermsNotPaid: 0.0
+  CreaditScore: 545.037708693149
+  DTI: 0.22142806885434715
+  EmploymentMonths: 47.09657685664942
+  Foreclosure: 0.0
+  InquiresTotal: 15.560285549798506
+  LTV: 1.340639980762414
+  LatePaymentHistory001230: 0.0
+  LatePaymentHistory001260: 0.0
+  LatePaymentHistory001290Plus: 0.0
+  LatePaymentHistory132430: 0.0
+  LatePaymentHistory132460: 0.0
+  LatePaymentHistory132490Plus: 0.0
+  LatePaymentHistory25Plus30: 0.0
+  LatePaymentHistory25Plus60: 0.0
+  LatePaymentHistory25Plus90: 0.0
+  Mileage: 105155.60592285573
+  Mortgage: 0.0
+  NinetyDaysDelinquent: 4.929600460564194
+  OpenTotal: 0.0
+  OpeningBalance: 10625.024559585494
+  OrigTerm: 44.55440414507772
+  PTI: 0.11510237938975248
+  Payment: 355.67431744386874
+  Recy: 723.3864536557282
+  Reposessions: 0.0
+  Salary_x: 2797.507697179046
+  Salary_y: 3050.6082325849175
+  Term: 44.553540587219345
+  TradelinesBalance: 25335.765767415094
+  TradelinesTotal: 11.697910189982732
+  VehicleYear: 2010.772308578008
+  Was180DaysPastDue: 0.1963154864709269
