@@ -25,8 +25,9 @@ predictions:
   replace:
     CL: 1
     CO: 0
+  discrete: True
   doSpecial: False
-#  special: 'ProfitLoss'
+  special: 'ProfitLoss'
 #  special: 'DelqPct'
 
 ignore:
@@ -45,6 +46,7 @@ ignore:
   - 'CurrentPaymentsMade'
   - 'Name'
   - 'Delq'
+#  - 'ProcStatsCd'
   - 'NumberPmnt'
 
 outliers:
