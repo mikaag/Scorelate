@@ -1,8 +1,8 @@
 ---
 server:
-  name: localhost
+  name: LOCALHOST
   user: sa
-  password: Passw0rd!
+  password: Sonana@2018
   database: Loans_Quality_2021_06_17
 
 model_dir: '../Models/'
