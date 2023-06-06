@@ -1,11 +1,9 @@
 ---
 server:
-  name: LOCALHOST
+  name: localhost
   user: sa
-  password: Sonana@2018
+  password: Passw0rd!
   database: Loans_Quality_2021_06_17
-
-model_dir: '../Models/'
 
 tables:
   -
@@ -27,8 +25,8 @@ predictions:
     CO: 0
   discrete: True
   doSpecial: False
-  special: 'ProfitLoss'
-#  special: 'DelqPct'
+  special: 'DelqPct'
+#  special: 'ProfitLoss'
 
 ignore:
   - 'Class_'
